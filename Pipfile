@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+opencv-python = "*"
+deepface = "*"
+python-dotenv = "*"
+pytube = "*"
+selenium = "*"
+appium-python-client = "*"
+webdriver-manager = "*"
+moviepy = "*"
+gtts = "*"
+sounddevice = "*"
+scipy = "*"
+gradio-client = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

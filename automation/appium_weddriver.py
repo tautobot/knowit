@@ -1,15 +1,13 @@
 from appium import webdriver
 from config import *
 
-
 filepath = os.path.dirname(__file__)
 app_path = os.path.dirname(filepath)
-
 device_name = ANDROID_DEVICE_NAME  # emulator emulator-5554
 
 
 def android_webdriver(app_name='pouch'):
-    path = f'/root/{app_name}.apk' if environment == 'docker' else f"{app_path}/android/app_file/{app_name}.apk"
+    # path = f'/root/{app_name}.apk' if environment == 'docker' else f"{app_path}/android/app_file/{app_name}.apk"
     appium_options = webdriver.webdriver.AppiumOptions()
     desired_cap = {
         "deviceName"                       : device_name,
