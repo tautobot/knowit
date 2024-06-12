@@ -1,4 +1,3 @@
-from random import choice
 from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By

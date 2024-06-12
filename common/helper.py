@@ -1,33 +1,27 @@
-import shutil
-import subprocess
-import paramiko
-import psycopg2
-import sounddevice as sd
-import subprocess
-import wavio as wv
-import re
-import urllib.request
-import hashlib
 import io
+import re
+import pytube
+import shutil
+import hashlib
 import requests
 import contextlib
 import pandas as pd
-import pytube
-from aqa.utils import youtube_downloader
+import sounddevice as sd
+import subprocess
+import urllib.request
+from youtube import youtube_downloader
 from moviepy.editor import VideoFileClip, AudioFileClip, ImageClip, TextClip, ImageSequenceClip, CompositeVideoClip, concatenate_videoclips
 from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
-from bs4 import BeautifulSoup
 from pathlib import Path
 from PIL import Image
 from bs4 import BeautifulSoup
 from scipy.io.wavfile import write
-from sshtunnel import SSHTunnelForwarder
 from gradio_client import Client
 from gtts import gTTS
 from config import *
-from aqa.utils.enums import Languages, News, VNExVNCategories
+from common.enums import Languages, News, VNExVNCategories
 
 
 def concat_videos(list_videos, outfile):
